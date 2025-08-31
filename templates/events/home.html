@@ -1,0 +1,505 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home • ticketo.mk{% endblock %}
+
+{% block extra_head %}
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ====== THEME (dark + red) ====== */
+        :root {
+            --bg: #000000;
+            --card: #000;
+            --panel: #000;
+            --ink: #fff;
+            --muted: #ffffff;
+            --red: #f57251;
+            --red-2: #f57251;
+            --line: #c4ad9d;
+        }
+
+
+        /* ====== HERO (оставено од претходно) ====== */
+        .hero-wrap {
+            background: #C4AD9D;
+            border-radius: 18px;
+            padding: 18px;
+        }
+
+        .hero-panel {
+            height: 520px;
+        }
+
+        .panel-card {
+            height: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            background: var(--panel);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+        }
+
+        .up-grid {
+            height: 100%;
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows:repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .up-tile {
+            position: relative;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #000000;
+            aspect-ratio: 16/9;
+        }
+
+        .up-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .up-cap {
+            position: absolute;
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            padding: 10px 12px;
+            color: #fff;
+            background: rgba(0, 0, 0, .45);
+            border: 1px solid rgba(255, 255, 255, .08);
+            border-radius: 12px;
+            backdrop-filter: blur(2px);
+        }
+
+        .up-date, .up-city {
+            font-size: .82rem;
+            font-weight: 700;
+            opacity: .95;
+            color: #ffffff;
+        }
+
+        .up-title {
+            font-weight: 700;
+            line-height: 1.15;
+        }
+
+        .section-label {
+            color: #ffffff;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: .02em;
+            margin-bottom: 14px;
+        }
+
+        .hero-carousel {
+            height: 100%;
+        }
+
+        .hero-carousel .carousel-inner, .hero-carousel .carousel-item, .hero-carousel .carousel-item > .item-wrap {
+            height: 100%;
+        }
+
+        .hero-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-caption {
+            position: absolute;
+            left: 16px;
+            right: 16px;
+            bottom: 16px;
+            background: rgba(0, 0, 0, .45);
+            border: 1px solid rgba(255, 255, 255, .08);
+            color: #fff;
+            padding: 14px 16px;
+            border-radius: 14px;
+        }
+
+        .hero-caption .meta {
+            color: #ffffff;
+            opacity: .9;
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            width: 14%;
+        }
+
+        /* ====== CATEGORY CARDS (нов дизајн) ====== */
+        .cat-card {
+            background: var(--card);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, .35);
+        }
+
+        .cat-head {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            background: #f57251; /* твојата портокалова */
+            color: #fff;
+            padding: .85rem 1.1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: .03em;
+        }
+
+        .cat-head i {
+            font-size: 22px; /* исто како што имаше, но попрегледно */
+            line-height: 1;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .cat-head span {
+            display: inline-block;
+        }
+
+        .cat-hero {
+            position: relative;
+            background: #000000;
+        }
+
+        .ratio-hero {
+            aspect-ratio: 16/9;
+            width: 100%;
+        }
+
+        .ratio-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .cat-body {
+            padding: 1rem;
+        }
+
+        .cat-item {
+            background: #000000;
+            border: 1px solid var(--line);
+            color: var(--ink);
+            border-radius: 12px;
+            padding: .9rem 1rem;
+            margin-bottom: .75rem;
+        }
+
+        .cat-item .title {
+            font-weight: 700;
+        }
+
+        .cat-item .place {
+            font-size: .92rem;
+            color: var(--muted);
+            margin-top: .25rem;
+        }
+
+        .cat-item .accent {
+            width: 32px;
+            height: 4px;
+            background: var(--red);
+            border-radius: 4px;
+            margin: .45rem 0 .35rem;
+        }
+
+        .cat-empty {
+            background: dimgray;
+            color: #ffffff;
+            border: 1px dashed dimgray;
+            border-radius: 12px;
+            padding: 2.25rem 1rem;
+            text-align: center;
+        }
+
+        .cat-btn {
+            background: transparent;
+            border: 2px solid var(--red);
+            color: #fff;
+            font-weight: 700;
+            width: 100%;
+            padding: .7rem;
+            border-radius: 12px;
+        }
+
+        .cat-btn:hover {
+            background: var(--red-2);
+            border-color: var(--red-2);
+            color: #fff;
+        }
+
+
+        body > main > div.container.mb-5 > div {
+            padding-top: 170px;
+        }
+
+        .event-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .event-card .p-3 {
+            background: #000000;
+            color: #ffffff;
+        }
+
+        .event-card .small {
+            color: #ffffff;
+        }
+
+        .event-card .meta {
+            border-top: #f57251 4px solid;
+        }
+
+        .price {
+            font-family: 'Montserrat', system-ui, sans-serif;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .event-card .desc {
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* два реда */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+
+        }
+
+        /* ====== Responsive ====== */
+        @media (max-width: 991.98px) {
+            .hero-panel {
+                height: 380px;
+            }
+
+            .up-grid {
+                grid-template-columns:1fr 1fr;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .hero-panel {
+                height: 300px;
+            }
+
+            .up-grid {
+                grid-template-columns:1fr;
+                grid-template-rows:repeat(4, 1fr);
+            }
+        }
+
+        body > main > div.container.my-4 > div > div > div:nth-child(1) {
+            background-color: black;
+            border: black;
+            border-radius: 15px;
+        }
+
+        .cat-head {
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+            background: #f57251; /* твојата портокалова */
+            color: #fff;
+            padding: .8rem 1.1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: .03em;
+        }
+
+        /* Малата, целосна слика */
+        .cat-icon {
+            height: 22px; /* колку висок да биде барот */
+            width: auto; /* за да си ја задржи проп. */
+            object-fit: contain; /* да се гледа целата иконка */
+            flex: 0 0 auto; /* да не се растега */
+        }
+
+        /* Насловот */
+        .cat-head span {
+            line-height: 1;
+        }
+
+        .my-4 {
+            padding-top: 50px;
+        }
+
+
+    </style>
+{% endblock %}
+
+{% block content %}
+    <!-- ===== HERO: UPCOMING (лево) + CAROUSEL (десно) ===== -->
+    <div class="container my-4">
+        <div class="hero-wrap">
+            <div class="row g-3 align-items-stretch">
+                <!-- LEFT -->
+                <div class="col-12 col-lg-6">
+                    <div class="panel-card hero-panel d-flex flex-column">
+                        <div class="px-2 px-sm-3 pt-3">
+                            <div class="section-label">Upcoming events</div>
+                        </div>
+                        <div class="px-2 px-sm-3 pb-3 flex-fill">
+                            <div class="up-grid">
+                                {% for ev in upcoming_events|slice:":4" %}
+                                    <a href="{% url 'event_detail' ev.pk %}" class="text-decoration-none">
+                                        <div class="up-tile">
+                                            <img class="up-img" src="{{ ev.image.url }}" alt="{{ ev.name }}">
+                                            <div class="up-cap">
+                                                <div class="up-date">{{ ev.datetime|date:"d.m.Y" }}</div>
+                                                <div class="up-title">{{ ev.name }}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                {% empty %}
+                                    <div class="text-light">Нема претстојни настани.</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="col-12 col-lg-6">
+                    <div id="heroCarousel" class="carousel slide panel-card hero-panel hero-carousel"
+                         data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            {% for ev in carousel_events %}
+                                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                    <a href="{% url 'event_detail' ev.pk %}"
+                                       class="item-wrap position-relative d-block text-decoration-none">
+                                        <img class="hero-img" src="{{ ev.image.url }}" alt="{{ ev.name }}">
+                                        <div class="hero-caption">
+                                            <h3 class="fw-bold">{{ ev.name }}</h3>
+                                            <div class="meta small">
+                                                {{ ev.location.name }}, {{ ev.location.city }}
+                                                • {{ ev.date_range_display }}
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            {% endfor %}
+                            {% if not carousel_events|dictsort:"is_popular" %}
+                                <div class="carousel-item active">
+                                    <div class="item-wrap d-flex align-items-center justify-content-center"
+                                         style="background:#000000;">
+                                        <div class="text-white-50">Нема популарни настани</div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CATEGORIES (нов layout како на screenshot) ===== -->
+    <div class="container mb-5">
+        <div class="row g-4">
+            <h1 class="heading" style="color: white; font-weight:bold">CATEGORIES</h1>
+            {% for key, cat_events in sections.items %}
+                <div class="col-12 col-lg-4">
+                    <div class="cat-card">
+                        <div class="cat-head">
+                            {% with k=key|lower %}
+                                {% if k == 'concert' or k == 'concerts' %}
+                                    <img class="cat-icon" src="/media/icons/voice-search.png" alt="Concert">
+                                {% elif k == 'festival' or k == 'festivals' %}
+                                    <img class="cat-icon" src="/media/icons/vinyl.png" alt="Festival">
+                                {% elif k == 'theatre' or k == 'theater' %}
+                                    <img class="cat-icon" src="/media/icons/theater.png" alt="Theatre">
+                                {% elif k == 'classical' %}
+                                    <img class="cat-icon" src="/media/icons/violin.png" alt="Classical">
+                                {% elif k == 'sport' or k == 'sports' %}
+                                    <img class="cat-icon" src="/media/icons/soccer-ball.png" alt="Sport">
+                                {% else %}
+                                    <img class="cat-icon" src="/media/icons/application.png" alt="Events">
+                                {% endif %}
+                            {% endwith %}
+                            <span>{{ key|title }}</span>
+                        </div>
+
+
+
+
+                        {% if cat_events %}
+                            <!-- голема слика за првиот настан -->
+                            <div class="cat-hero">
+                                <a href="{% url 'event_detail' cat_events.0.pk %}" class="d-block">
+                                    <div class="ratio-hero">
+                                        <img src="{{ cat_events.0.image.url }}" alt="{{ cat_events.0.name }}">
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="cat-body">
+                                <!-- наслов/локација на првиот -->
+                                <a href="{% url 'event_detail' cat_events.0.pk %}"
+                                   class="text-decoration-none text-reset">
+                                    <div class="cat-item">
+                                        <div class="title">{{ cat_events.0.name }}</div>
+                                        <div class="accent"></div>
+                                        <div class="place">
+                                            {{ cat_events.0.location.name }}, {{ cat_events.0.location.city }}
+                                            • {{ cat_events.0.date_range_display }}
+                                        </div>
+                                    </div>
+                                </a>
+
+
+                                <!-- уште 2-3 ставки (ако има) -->
+                                {% for ev in cat_events|slice:"1:4" %}
+                                    <a href="{% url 'event_detail' ev.pk %}" class="text-decoration-none text-reset">
+                                        <div class="cat-item">
+                                            <div class="title">{{ ev.name }}</div>
+                                            <div class="accent"></div>
+                                            <div class="place">
+                                                {{ ev.location.name }}, {{ ev.location.city }}
+                                                • {{ ev.date_range_display }}
+                                            </div>
+                                        </div>
+                                    </a>
+                                {% endfor %}
+
+
+                                <a class="btn cat-btn mt-1" href="/events/?category={{ key }}">All Events</a>
+                            </div>
+                        {% else %}
+                            <div class="cat-body">
+                                <div class="cat-empty">
+                                    <div style="font-size:40px; line-height:1;">☹️</div>
+                                    <div class="mt-2">No upcoming {{ key|title }} events</div>
+                                </div>
+                                <a class="btn cat-btn mt-3" href="/events/?category={{ key }}">All Events</a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

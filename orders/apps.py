@@ -1,13 +1,10 @@
 from django.apps import AppConfig
 
-
-class EventsConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'events'
-
 class OrdersConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'orders'
-
     def ready(self):
-        import orders.signals
+        try:
+            import orders.signals  # ако имаш signals.py
+        except Exception:
+            pass

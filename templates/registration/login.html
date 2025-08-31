@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+    <div class="container my-5" style="color:#000;">
+        <h2 class="fw-bold mb-4">Најава</h2>
+        <form method="post" class="col-12 col-sm-6 col-lg-4">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-primary">Login</button>
+        </form>
+    </div>
+{% endblock %}

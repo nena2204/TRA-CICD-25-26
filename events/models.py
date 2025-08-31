@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.db import models
+from django.conf import settings
 #
 # class EventCategory(models.Model):
 #     name = models.CharField(max_length=100)
@@ -19,10 +21,14 @@ class EventLocation(models.Model):
 
 class Event(models.Model):
     CATEGORY_CHOICES = [
-        ("sport", "Sport"),
         ("concert", "Concert"),
+        ("festival", "Festival"),
+        ("theatre", "Theatre"),
+        ("classical", "Classical Music"),
+        ("sport", "Sport"),
+        ("other", "Other"),
     ]
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=150)
     # category = models.ForeignKey(EventCategory, on_delete=models.CASCADE)
     category=models.CharField(max_length=100,choices=CATEGORY_CHOICES)
     datetime=models.DateTimeField()
@@ -43,4 +49,18 @@ class Ticket(models.Model):
 
     def __str__(self):
         return self.event.name
+
+
+class TicketType(models.Model):
+    event = models.ForeignKey(
+        Event, on_delete=models.CASCADE, related_name="ticket_types"
+    )
+    name  = models.CharField(max_length=120)         # „Регуларен билет“, „ВИП“, ...
+    price = models.DecimalField(max_digits=9, decimal_places=2)
+    qty   = models.PositiveIntegerField(null=True, blank=True)  # опционално ограничување
+    sale_starts = models.DateTimeField(null=True, blank=True)
+    sale_ends   = models.DateTimeField(null=True, blank=True)
+
+    def __str__(self):
+        return f"{self.event.name} – {self.name}"
 

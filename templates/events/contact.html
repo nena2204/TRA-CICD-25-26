@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Контакт • Ticketo{% endblock %}
+
+{% block extra_head %}
+    <style>
+        html {
+
+            background-image: url("../../media/images/background.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .contact-wrapper {
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+            {#max-width: 600px;#}
+            background: white;
+        }
+
+        .contact-wrapper label {
+            font-weight: 600;
+            margin-bottom: .25rem;
+            display: block;
+        }
+
+        .contact-wrapper input, .contact-wrapper textarea {
+            width: 100%;
+            padding: .6rem .8rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .contact-wrapper button {
+            background: #c4ad9d;
+            color: #000;
+            font-weight: 700;
+            padding: .7rem 1.4rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .contact-wrapper button:hover {
+            opacity: .9;
+        }
+
+        .heading {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            border-bottom: 4px solid #c4ad9d;
+            display: inline-block;
+            padding-bottom: .4rem;
+            color: white;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container my-5">
+        <h1 class="heading" style="color: white">КОНТАКТ</h1>
+
+        {% if messages %}{% for m in messages %}
+            <div class="alert alert-success mt-3">{{ m }}
+            </div>
+        {% endfor %}
+        {% endif %}
+
+        <div class="contact-wrapper mt-3">
+            <form method="post" novalidate>
+                {% csrf_token %}
+                <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>{{ form.name }}
+                <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>{{ form.email }}
+                <label for="{{ form.subject.id_for_label }}">{{ form.subject.label }}</label>{{ form.subject }}
+                <label for="{{ form.message.id_for_label }}">{{ form.message.label }}</label>{{ form.message }}
+                <button type="submit">Испрати</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

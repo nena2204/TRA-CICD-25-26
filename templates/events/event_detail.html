@@ -1,0 +1,271 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{ event.name }} • ticketo.mk{% endblock %}
+
+{% block extra_head %}
+    <style>
+        /* Позадина од event сликата */
+        html {
+            background: url("{{ event.image.url }}") no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        body {
+            background: transparent;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Overlay со blur */
+        html::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55); /* темно затемнување */
+            backdrop-filter: blur(6px); /* blur ефект */
+            z-index: 0;
+        }
+
+        .event-hero {
+            background: #2b2b2bcc;
+            border-radius: 14px;
+            padding: 18px;
+            position: relative;
+            z-index: 1
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 12px
+        }
+
+        .info-card {
+            background: #1f1f1f;
+            border-radius: 12px;
+            color: #fff;
+            position: relative;
+            z-index: 1
+        }
+
+        .info-card .row + .row {
+            border-top: 1px solid rgba(255, 255, 255, .08)
+        }
+
+        .info-label {
+            opacity: .8
+        }
+
+        .badge-date {
+            background: #f57251;
+            color: #fff;
+            border-radius: 10px;
+            padding: .5rem .75rem;
+            text-align: center
+        }
+
+        .tickets-card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            color: #fff;
+            position: relative;
+            z-index: 1
+        }
+
+        .ticket-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .9rem 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, .07)
+        }
+
+        .ticket-row:last-child {
+            border-bottom: 0
+        }
+
+        .buy-btn {
+            background: #f57251;
+            border: 0;
+            font-weight: 700
+        }
+
+        .buy-btn:hover {
+            background: #e56340
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container my-4">
+
+        <h1 class="text-white fw-bold mb-3">{{ event.name }}</h1>
+        <div class="text-white-50 mb-4">
+            {{ event.location.name }}, {{ event.location.city }}
+        </div>
+
+        <div class="event-hero mb-4">
+            <div class="row g-3 align-items-stretch">
+                <!-- ЛЕВО: голема слика -->
+                <div class="col-12 col-lg-7">
+                    <img class="hero-img" src="{{ event.image.url }}" alt="{{ event.name }}">
+                </div>
+
+                <!-- ДЕСНО: детали -->
+                <div class="col-12 col-lg-5">
+                    <div class="d-flex justify-content-end mb-3">
+                        <div class="badge-date text-center">
+                            <div class="h4 m-0">{{ event.datetime|date:"d" }}</div>
+                            <div class="small m-0 text-uppercase">{{ event.datetime|date:"b" }}</div>
+                            <div class="small m-0">{{ event.datetime|date:"H:i" }}</div>
+                        </div>
+                    </div>
+
+                    <div class="info-card p-3">
+                        <div class="row py-2">
+                            <div class="col-4 info-label">Date (start)</div>
+                            <div class="col-8">{{ event.datetime|date:"d-m-Y" }}</div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-4 info-label">Location</div>
+                            <div class="col-8">
+                                <span class="badge bg-danger-subtle text-white"
+                                      style="background:#f57251;">{{ event.location.name }}</span>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-4 info-label">City</div>
+                            <div class="col-8">{{ event.location.city }}</div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-4 info-label">Time (start)</div>
+                            <div class="col-8">{{ event.datetime|date:"H:i" }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Опис -->
+        {% if event.description %}
+            <div class="info-card p-3 mb-4">
+                <div class="fw-bold mb-2">About event</div>
+                <div class="text-white-50">{{ event.description }}</div>
+            </div>
+        {% endif %}
+
+        <!-- TICKETS -->
+        <!-- TICKETS -->
+        <div class="tickets-card p-3 mb-5">
+            <div class="fw-bold mb-2">Tickets</div>
+
+            {% if ticket_types %}
+                {% for tt in ticket_types %}
+                    <div class="ticket-row">
+                        <div>
+                            <div class="fw-semibold">{{ tt.name }}</div>
+                            <div class="small text-white-50">
+                                {% if tt.sale_starts %}From {{ tt.sale_starts|date:"d.m.Y H:i" }}{% endif %}
+                                {% if tt.sale_ends %}{% if tt.sale_starts %} • {% endif %}Until
+                                    {{ tt.sale_ends|date:"d.m.Y H:i" }}{% endif %}
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="fw-bold">{{ tt.price|floatformat:0 }} ден.</div>
+                            <input type="number" class="form-control form-control-sm" value="1" min="1"
+                                   style="width:80px;" data-qty-for="{{ tt.id }}">
+                            <button class="btn btn-sm buy-btn" data-buy data-tt="{{ tt.id }}">Buy tickets</button>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                {# ако воопшто НЕМАТЕ TicketType — остави инфо/disabled или стави fallback #}
+                <div class="ticket-row">
+                    <div class="fw-semibold">Ticket</div>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="fw-bold">{{ event.ticket_price|floatformat:0 }} ден.</div>
+                        <a class="btn btn-sm btn-secondary disabled" href="#">Buy tickets</a>
+                    </div>
+                </div>
+            {% endif %}
+
+        </div>
+
+
+    </div>
+    <!-- Hidden form used for POSTing to /cart/add/ -->
+    <form id="cartAddForm" class="d-none">
+        {% csrf_token %}
+        <input type="hidden" name="ticket_type_id" id="cartTT">
+        <input type="hidden" name="qty" id="cartQty" value="1">
+    </form>
+
+    <!-- Bootstrap Modal (confirm add) -->
+    <div class="modal fade" id="confirmAdd" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background:#000;color:#fff;border:1px solid rgba(255,255,255,.12)">
+                <div class="modal-header">
+                    <h5 class="modal-title">Додади во кошничка?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Дали сакате да го додадете билетот во кошничката?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Откажи</button>
+                    <button id="confirmBtn" type="button" class="btn btn-primary">Додади</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block extra_js %}
+        <script>
+            (function () {
+                const modalEl = document.getElementById('confirmAdd');
+                const modal = new bootstrap.Modal(modalEl);
+                let pending = {tt: null, qty: 1};
+
+                // click on any "Buy tickets" button
+                document.querySelectorAll('[data-buy]').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const tt = btn.getAttribute('data-tt');
+                        const qtyInput = document.querySelector(`[data-qty-for="${tt}"]`);
+                        const qty = Math.max(1, parseInt(qtyInput?.value || '1', 10));
+                        pending = {tt, qty};
+                        modal.show();
+                    });
+                });
+
+                // confirm add → POST to /cart/add/
+                document.getElementById('confirmBtn').addEventListener('click', async () => {
+                    try {
+                        const form = document.getElementById('cartAddForm');
+                        document.getElementById('cartTT').value = pending.tt;
+                        document.getElementById('cartQty').value = pending.qty;
+
+                        const fd = new FormData(form);
+                        const resp = await fetch("{% url 'cart_add' %}", {
+                            method: "POST",
+                            headers: {"X-CSRFToken": form.querySelector('[name=csrfmiddlewaretoken]').value},
+                            body: fd
+                        });
+                        const data = await resp.json();
+                        modal.hide();
+                        if (data.ok) {
+                            // опционално: можеш да апдејтуваш badge во navbar со data.count
+                            window.location.href = "{% url 'events' %}";
+                        } else {
+                            alert("Не успеа додавањето во кошничка.");
+                        }
+                    } catch (e) {
+                        modal.hide();
+                        alert("Грешка при додавање во кошничка.");
+                    }
+                });
+            })();
+        </script>
+    {% endblock %}
+
+{% endblock %}
