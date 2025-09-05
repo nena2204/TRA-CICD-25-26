@@ -27,10 +27,7 @@ urlpatterns = [
                   path('nena/', nena, name='nena'),
                   path('contact/', contact_view, name='contact'),
                   path("events/<int:pk>/", event_detail, name="event_detail"),
-                  path("", home, name="home"),
-                  path("events/", event_list, name="events"),
-                  path("events/<int:pk>/", event_detail, name="event_detail"),
                   path("", include("orders.urls")),
-                  path("accounts/", include("django.contrib.auth.urls")),  # 👈 login/logout/password views
-
+                  path("accounts/", include("django.contrib.auth.urls")),
+                  path("", include("events.urls")),  # Include events URLs
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,12 +1,102 @@
 {% extends "base.html" %}
 {% block title %}Login{% endblock %}
+
 {% block content %}
-    <div class="container my-5" style="color:#000;">
-        <h2 class="fw-bold mb-4">Најава</h2>
-        <form method="post" class="col-12 col-sm-6 col-lg-4">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button class="btn btn-primary">Login</button>
-        </form>
+    <style>
+        html {
+
+            background-image: url("../../media/images/background.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .login-container {
+            transition: all 0.3s ease;
+        }
+
+        .login-container:hover {
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+        }
+
+        .btn-primary {
+            background-color: #f57251 !important;
+            border-color: #f57251 !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #e05b3a !important;
+            border-color: #e05b3a !important;
+        }
+
+        .btn-light {
+            background-color: #c4ad9d !important;
+            border-color: #c4ad9d !important;
+            color: #fff !important;
+        }
+
+        .btn-light:hover {
+            background-color: #b39c8c !important;
+            border-color: #b39c8c !important;
+        }
+
+        .form-control:focus {
+            border-color: #f57251;
+            box-shadow: 0 0 0 0.25rem rgba(245, 114, 81, 0.25);
+        }
+
+        a {
+            color: #f57251 !important;
+        }
+
+        a:hover {
+            color: #e05b3a !important;
+        }
+    </style>
+
+    <div class="d-flex align-items-center justify-content-center min-vh-100">
+        <div class="login-container bg-white rounded-4 shadow-sm p-4 p-md-5" style="max-width: 400px; width: 90%;">
+            <h2 class="text-center fw-bold mb-4">Login Form</h2>
+
+            <!-- Login/Signup Tabs -->
+            <div class="row mb-4">
+                <div class="col-6">
+                    <button class="btn btn-primary w-100 active">Login</button>
+                </div>
+                <div class="col-6">
+                    <a href="{% url 'register' %}" class="btn btn-light w-100">Signup</a>
+                </div>
+            </div>
+
+            <form method="post">
+                {% csrf_token %}
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                    Your username and password didn't match. Please try again.
+                </div>
+                {% endif %}
+
+                <div class="mb-3">
+                    <label for="id_username" class="form-label">Username</label>
+                    <input type="text" name="username" class="form-control" id="id_username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="id_password" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="id_password" required>
+                </div>
+
+                <div class="mb-4 text-end">
+                    <a href="{% url 'password_reset' %}" class="text-decoration-none small">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 py-2 mb-4">Login</button>
+
+                <div class="text-center">
+                    <p class="mb-0">Not a member? <a href="{% url 'register' %}" class="text-decoration-none">Signup
+                        now</a></p>
+                </div>
+            </form>
+        </div>
     </div>
 {% endblock %}

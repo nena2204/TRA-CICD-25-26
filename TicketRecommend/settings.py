@@ -149,6 +149,11 @@ EMAIL_HOST_PASSWORD = "your-app-password"
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 SITE_ID = 1
+
+# Authentication settings
+LOGIN_REDIRECT_URL = '/'  # Redirect to home page after login
+LOGOUT_REDIRECT_URL = '/'  # Redirect to home page after logout
+
 ACCOUNT_AUTHENTICATION_METHOD = "email"
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = False
@@ -159,9 +164,4 @@ TEMPLATES[0]["OPTIONS"]["context_processors"] += [
 TEMPLATES[0]["OPTIONS"]["context_processors"] += [
     "orders.context_processors.cart_count",  # 👈 бројка за кошничката
 ]
-
-LOGIN_REDIRECT_URL = "/"
-LOGOUT_REDIRECT_URL = "/"
-
-
 
