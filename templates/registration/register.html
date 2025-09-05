@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<style>
+    html {
+        background-image: url("../../media/images/background.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    body, html {
+        height: 100%;
+    }
+    .register-bg {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+    .register-box {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        padding: 2.5rem 2.2rem 1.5rem 2.2rem;
+        max-width: 520px;
+        width: 100%;
+        margin: auto;
+    }
+    .register-title {
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+    .form-label {
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+    }
+    .form-control {
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+    .helper-text {
+        font-size: 0.92rem;
+        color: #888;
+        margin-left: 0.5rem;
+    }
+    .password-rules {
+        font-size: 0.97rem;
+        color: #444;
+        margin-bottom: 1rem;
+        margin-top: -0.5rem;
+        padding-left: 1.2rem;
+    }
+    .password-rules li {
+        margin-bottom: 0.3rem;
+    }
+    .register-btn {
+        background: #f57251;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 8px;
+        width: 100%;
+        padding: 0.85rem;
+        font-size: 1.1rem;
+        border: none;
+        margin-top: 1.2rem;
+        transition: background 0.2s;
+    }
+    .register-btn:hover {
+        background: #c4ad9d;
+        color: #fff;
+    }
+</style>
+<div class="register-bg">
+    <div class="register-box">
+        <div class="register-title">Register</div>
+        <form method="post">
+            {% csrf_token %}
+            <label for="id_username" class="form-label">Username
+                <span class="helper-text">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span>
+            </label>
+            <input type="text" name="username" class="form-control" id="id_username" maxlength="150" required autofocus>
+            <label for="id_password1" class="form-label">Password</label>
+            <input type="password" name="password1" class="form-control" id="id_password1" required>
+            <ul class="password-rules">
+                <li>Your password can’t be too similar to your other personal information.</li>
+                <li>Your password must contain at least 8 characters.</li>
+                <li>Your password can’t be a commonly used password.</li>
+                <li>Your password can’t be entirely numeric.</li>
+            </ul>
+            <label for="id_password2" class="form-label">Password confirmation
+                <span class="helper-text">Enter the same password as before, for verification.</span>
+            </label>
+            <input type="password" name="password2" class="form-control" id="id_password2" required>
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
