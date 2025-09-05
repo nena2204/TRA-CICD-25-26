@@ -29,6 +29,13 @@
 
         }
 
+        .navbar-brand {
+            color: #000 !important;
+        }
+        .navbar-brand:hover {
+            color: #000 !important;
+        }
+
         /* Ова го трга default hamburger background на Bootstrap */
         .navbar-toggler-icon {
             background-image: none !important;
@@ -162,10 +169,13 @@
 
                 {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <form method="post" action="{% url 'logout' %}" style="display:inline">
+                        <a class="nav-link" href="{% url 'profile' %}">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <form method="post" action="{% url 'logout' %}" class="m-0 d-flex align-items-center h-100">
                             {% csrf_token %}
-                            <button type="submit" class="nav-link btn btn-link p-0"
-                                    style="border:none;background:none;">
+                            <button type="submit" class="nav-link btn btn-link"
+                                    style="border:none; background:none; padding: 8px 0;">
                                 Logout
                             </button>
                         </form>
