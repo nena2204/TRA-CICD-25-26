@@ -151,7 +151,7 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SITE_ID = 1
 
 # Authentication settings
-LOGIN_REDIRECT_URL = '/'  # Redirect to home page after login
+LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'  # Redirect to home page after logout
 
 ACCOUNT_AUTHENTICATION_METHOD = "email"

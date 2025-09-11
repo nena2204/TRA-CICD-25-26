@@ -1,4 +1,6 @@
 from django.shortcuts import render, get_object_or_404
+from django.views.generic import TemplateView
+
 from .models import Event
 
 from django import forms
@@ -102,3 +104,7 @@ def contact_view(request):
         form = ContactForm()
 
     return render(request, "events/contact.html", {"form": form})
+
+
+class HowToBuyView(TemplateView):
+    template_name = "events/how_to_buy.html"

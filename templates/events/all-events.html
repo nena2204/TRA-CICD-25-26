@@ -140,7 +140,7 @@
             {% for ev in events %}
                 <div class="col-12 col-md-6 col-xl-3">
                     <a href="{% url 'event_detail' ev.pk %}" class="text-decoration-none text-reset d-block">
-                        <div class="event-card">
+                        <div class="event-card"  style="min-height: 340px;">
                             <img src="{{ ev.image.url }}" alt="{{ ev.name }}">
                             <div class="p-3">
                                 <div class="fw-bold mb-1">{{ ev.name }}</div>

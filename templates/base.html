@@ -32,6 +32,7 @@
         .navbar-brand {
             color: #000 !important;
         }
+
         .navbar-brand:hover {
             color: #000 !important;
         }
@@ -122,6 +123,37 @@
             padding: .25rem .45rem;
         }
 
+        html, body {
+            height: 100%;
+        }
+
+        /* full-height page */
+        body {
+            min-height: 100vh; /* fill viewport */
+            display: flex; /* vertical layout */
+            flex-direction: column;
+            background: transparent; /* you already have this */
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .cart-icon {
+            max-width: 18px;
+            max-height: 18px;
+            transition: filter .15s ease;
+        }
+
+        .navbar .nav-link:hover .cart-icon {
+            filter: brightness(0) invert(1);
+        }
+
+        /* looks white */
+
+
+        /* pushes footer down */
+
 
     </style>
     <!-- Font Awesome 6 (all.min.css) -->
@@ -151,13 +183,15 @@
         <div id="nav" class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="/events/">All Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">How to buy</a></li>
+                <li class="nav-item"><a class="nav-link" href="/how-to-buy/">How to buy</a></li>
                 <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
                 <li class="nav-item">
-                    <!-- Ова не отвора нов таб, туку offcanvas -->
+
+{#                        za offcanvas#}
+
                     <a class="nav-link position-relative" data-bs-toggle="offcanvas" href="#miniCart" role="button"
                        aria-controls="miniCart">
-                        <img class="cat-icon" src="../media/icons/shopping-cart-black.png"
+                        <img class="cart-icon" src="/media/icons/shopping-cart-black.png"
                              style="max-width: 18px; max-height: 18px">
 
                         <i class="fa-solid fa-cart-shopping"></i>

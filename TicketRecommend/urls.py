@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from events.views import home, event_list, nena, contact_view, event_detail
+from events.views import home, event_list, nena, contact_view, event_detail, HowToBuyView
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -30,4 +30,5 @@ urlpatterns = [
                   path("", include("orders.urls")),
                   path("accounts/", include("django.contrib.auth.urls")),
                   path("", include("events.urls")),  # Include events URLs
+                  path("how-to-buy/",HowToBuyView.as_view(),name="how-to-buy"),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
