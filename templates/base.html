@@ -187,7 +187,7 @@
                 <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
                 <li class="nav-item">
 
-{#                        za offcanvas#}
+                    {#                        za offcanvas#}
 
                     <a class="nav-link position-relative" data-bs-toggle="offcanvas" href="#miniCart" role="button"
                        aria-controls="miniCart">
@@ -267,6 +267,105 @@
             body.innerHTML = '<div class="p-4 text-center text-danger">Грешка при вчитување.</div>';
         }
     });
+</script>
+
+<!-- 🔽 Checkout Modal – стави пред </body> во base.html -->
+{#<div id="checkoutModal" class="hidden fixed inset-0 bg-black/50 items-center justify-center z-[9999]">#}
+{#    <div class="bg-white rounded-xl p-6 w-full max-w-2xl">#}
+{#        <h2 class="text-xl font-semibold mb-4">Информации за достава</h2>#}
+{##}
+{#        <form id="checkoutForm" class="grid grid-cols-1 md:grid-cols-2 gap-4" method="post" action="/api/checkout/">#}
+{#            {% csrf_token %}#}
+{#            <div class="md:col-span-2">#}
+{#                <label>Полно име *</label>#}
+{#                <input name="full_name" class="w-full border rounded p-2" required/>#}
+{#            </div>#}
+{#            <div>#}
+{#                <label>Телефон *</label>#}
+{#                <input name="phone" class="w-full border rounded p-2" required/>#}
+{#            </div>#}
+{#            <div>#}
+{#                <label>Е-маил адреса *</label>#}
+{#                <input type="email" name="email" class="w-full border rounded p-2" required/>#}
+{#            </div>#}
+{#            <div class="md:col-span-2">#}
+{#                <label>Улица *</label>#}
+{#                <input name="street" class="w-full border rounded p-2" required/>#}
+{#            </div>#}
+{#            <div>#}
+{#                <label>Број *</label>#}
+{#                <input name="street_no" class="w-full border rounded p-2" required/>#}
+{#            </div>#}
+{#            <div>#}
+{#                <label>Поштенски код *</label>#}
+{#                <input name="zip_code" class="w-full border rounded p-2" required/>#}
+{#            </div>#}
+{#            <div class="md:col-span-2">#}
+{#                <label>Град *</label>#}
+{#                <input name="city" class="w-full border rounded p-2" required/>#}
+{#            </div>#}
+{##}
+{#            <div class="md:col-span-2 flex gap-3 justify-end mt-2">#}
+{#                <button type="button" id="checkoutCancel" class="px-4 py-2 border rounded">Откажи</button>#}
+{#                <button type="submit" class="px-4 py-2 bg-green-600 text-white rounded">Потврди</button>#}
+{#            </div>#}
+{#        </form>#}
+{##}
+{#        <p id="checkoutError" class="text-red-600 mt-2 hidden"></p>#}
+{#    </div>#}
+{#</div>#}
+<script>
+(function () {
+  const modal = document.getElementById('checkoutModal');
+  const form = document.getElementById('checkoutForm');
+  const cancel = document.getElementById('checkoutCancel');
+  const err = document.getElementById('checkoutError');
+
+  // 1) NAJVAŽNO: селектор на твоето постоечко Checkout копче во кошничката.
+  // Во темплејтот каде е копчето додади: id="checkoutBtn"
+  const checkoutBtn = document.getElementById('checkoutBtn');
+
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', function (e) {
+      // го прекинуваме default redirect-от кон success
+      e.preventDefault();
+      modal.classList.remove('hidden');
+      modal.classList.add('flex'); // за да центрира
+    });
+  }
+
+  cancel.addEventListener('click', function(){
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  });
+
+  // 3) Submit → POST до /api/checkout/ → redirect /checkout/
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    err.classList.add('hidden');
+
+    const fd = new FormData(form);
+
+    // CSRF: ако формата го има {% csrf_token %}, FormData го праќа
+    try {
+      const resp = await fetch(form.getAttribute('action') || '/api/checkout/', {
+        method: 'POST',
+        headers: {'X-Requested-With':'XMLHttpRequest'},
+        body: fd
+      });
+      const data = await resp.json();
+      if (!resp.ok || !data.ok) {
+        err.textContent = (data && data.error) ? data.error : 'Грешка при испраќање.';
+        err.classList.remove('hidden');
+        return;
+      }
+      window.location.href = data.redirect || '/checkout/'; // твојата success страница
+    } catch (e2) {
+      err.textContent = 'Мрежна грешка. Обидете се повторно.';
+      err.classList.remove('hidden');
+    }
+  });
+})();
 </script>
 
 </body>

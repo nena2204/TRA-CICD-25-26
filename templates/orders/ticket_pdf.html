@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: DejaVu Sans, Arial, sans-serif;
+        }
+
+        .card {
+            border: 2px solid #1d4ed8;
+            padding: 24px;
+            border-radius: 12px;
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .muted {
+            color: #666;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px
+        }
+
+        th, td {
+            border-bottom: 1px solid #eee;
+            text-align: left;
+            padding: 8px 0;
+        }
+
+        .total {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .qr {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="head">
+        <div>
+            <h2>Ticketo.mk – Е-карта</h2>
+            <div class="muted">Нарачка: {{ order.id }} · Датум: {{ order.created_at|date:"d.m.Y H:i" }}</div>
+        </div>
+        <img class="logo" src="{{ logo_url }}"/>
+    </div>
+
+    <h3>Купувач</h3>
+    <div>{{ order.full_name }} · {{ order.email }} · {{ order.phone }}</div>
+    <div>{{ order.street }} {{ order.street_no }}, {{ order.zip_code }} {{ order.city }}</div>
+
+    <h3>Детали</h3>
+    <table>
+        <tr>
+            <th>Настан / Карта</th>
+            <th>Кол.</th>
+            <th>Цена</th>
+        </tr>
+        {% for i in order.items %}
+            <tr>
+                <td>{{ i.event }} – {{ i.ticket }}</td>
+                <td>{{ i.qty }}</td>
+                <td>{{ i.price }} ден</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <p class="total">Вкупно: {{ order.total }} ден</p>
+
+    <div class="qr">
+        <img src="data:image/png;base64,{{ qr_png_bytes|b64encode }}" width="140" height="140"/>
+        <div class="muted">Скенирај за верификација на билет</div>
+    </div>
+</div>
+</body>
+</html>

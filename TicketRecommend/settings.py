@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'events',
     'orders.apps.OrdersConfig',
+    'tickets_addons',
 
 ]
 
@@ -146,7 +147,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = "your-email@gmail.com"
 EMAIL_HOST_PASSWORD = "your-app-password"
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = "Ticketo.mk <no-reply@ticketo.mk>"
 
 SITE_ID = 1
 
@@ -165,3 +166,28 @@ TEMPLATES[0]["OPTIONS"]["context_processors"] += [
     "orders.context_processors.cart_count",  # 👈 бројка за кошничката
 ]
 
+# DEV: ќе печати имејли во конзола
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# PROD пример (SMTP – Gmail/App Password; или Resend SMTP)
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = "smtp.gmail.com"
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = "your@gmail.com"
+# EMAIL_HOST_PASSWORD = "app-password"
+# EMAIL_USE_TLS = True
+
+# медиуми за PDF фајлови
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "yourgmail@gmail.com"         # или постоечките
+EMAIL_HOST_PASSWORD = "app-password-here"       # Google App Password
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+# За контакт формата (ако сакаш да менуваш примач):
+CONTACT_ADMIN_EMAIL = "nikolovanena123@gmail.com"

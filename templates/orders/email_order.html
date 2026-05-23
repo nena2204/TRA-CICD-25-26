@@ -1,0 +1,32 @@
+<!-- templates/tickets_addons/email_order.html -->
+<!doctype html>
+<html>
+  <body style="font-family:Arial,sans-serif">
+    <h2>{{ full_name }}, вашата нарачка е успешно примена</h2>
+    <p><strong>Број на нарачка:</strong> {{ order_id }}</p>
+    <p><strong>Датум:</strong> {{ created_at|date:"d.m.Y" }}</p>
+    <hr>
+    <h3>Карти</h3>
+    <table width="100%" cellpadding="6" cellspacing="0" border="1" style="border-collapse:collapse;">
+      <tr>
+        <th align="left">Настан</th>
+        <th align="left">Тип</th>
+        <th align="right">Количина</th>
+        <th align="right">Цена (ден.)</th>
+      </tr>
+      {% for item in items %}
+      <tr>
+        <td>{{ item.name }}</td>
+        <td>{{ item.type }}</td>
+        <td align="right">{{ item.qty }}</td>
+        <td align="right">{{ item.price }}</td>
+      </tr>
+      {% endfor %}
+      <tr>
+        <td colspan="3" align="right"><strong>Вкупно:</strong></td>
+        <td align="right"><strong>{{ total }}</strong></td>
+      </tr>
+    </table>
+    <p>Во прилог е вашиот <strong>QR код</strong>. При влез покажете го прикачениот QR.</p>
+  </body>
+</html>

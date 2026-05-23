@@ -106,6 +106,15 @@
             }
         }
 
+        #namee {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+        }
+
         @media (max-width: 575.98px) {
             .hero-panel {
                 height: 300px;
@@ -140,10 +149,10 @@
             {% for ev in events %}
                 <div class="col-12 col-md-6 col-xl-3">
                     <a href="{% url 'event_detail' ev.pk %}" class="text-decoration-none text-reset d-block">
-                        <div class="event-card"  style="min-height: 340px;">
+                        <div class="event-card" style="min-height: 340px;">
                             <img src="{{ ev.image.url }}" alt="{{ ev.name }}">
                             <div class="p-3">
-                                <div class="fw-bold mb-1">{{ ev.name }}</div>
+                                <div id="namee" class="fw-bold mb-1">{{ ev.name }}</div>
                                 <div class="small mb-2">{{ ev.location.city }} • {{ ev.date_range_display }}</div>
                                 <p class="desc">{{ ev.description }}</p>
                             </div>

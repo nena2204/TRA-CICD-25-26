@@ -1,9 +1,6 @@
-from django.shortcuts import render, get_object_or_404
 from django.views.generic import TemplateView
 
-from .models import Event
 
-from django import forms
 # Create your views here.
 
 
@@ -57,7 +54,7 @@ def ping(request):
     return render(request, 'base.html')
 
 
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404
 from .models import Event
 
 
@@ -78,7 +75,7 @@ def event_detail(request, pk):
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.core.mail import send_mail
-from .forms import ContactForm
+from orders.forms import ContactForm
 
 def contact_view(request):
     if request.method == "POST":

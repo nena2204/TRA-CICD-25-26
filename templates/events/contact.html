@@ -18,8 +18,8 @@
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
-            {#max-width: 600px;#}
-            background: white;
+
+            {#max-width: 600px;#} background: white;
         }
 
         .contact-wrapper label {
@@ -65,22 +65,33 @@
 {% block content %}
     <div class="container my-5">
         <h1 class="heading" style="color: white">КОНТАКТ</h1>
-{##}
-{#        {% if messages %}{% for m in messages %}#}
-{#            <div class="alert alert-success mt-3">{{ m }}#}
-{#            </div>#}
-{#        {% endfor %}#}
-{#        {% endif %}#}
+        {##}
+        {#        {% if messages %}{% for m in messages %}#}
+        {#            <div class="alert alert-success mt-3">{{ m }}#}
+        {#            </div>#}
+        {#        {% endfor %}#}
+        {#        {% endif %}#}
 
         <div class="contact-wrapper mt-3">
-            <form method="post" novalidate>
-                {% csrf_token %}
-                <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>{{ form.name }}
-                <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>{{ form.email }}
-                <label for="{{ form.subject.id_for_label }}">{{ form.subject.label }}</label>{{ form.subject }}
-                <label for="{{ form.message.id_for_label }}">{{ form.message.label }}</label>{{ form.message }}
-                <button type="submit">Испрати</button>
-            </form>
+            <form
+  action="https://formspree.io/f/xvgbjvge"
+  method="POST"
+>
+<label>
+    Your Name:
+    <input type="name" name="name">
+  </label>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <button type="submit">Send</button>
+</form>
         </div>
     </div>
 {% endblock %}

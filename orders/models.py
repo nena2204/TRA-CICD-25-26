@@ -32,3 +32,27 @@ class OrderItem(models.Model):
 
     def subtotal(self):
         return self.qty * self.unit_price
+
+
+# app: orders/models.py
+import uuid
+from django.db import models
+
+class TicketOrder(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    full_name = models.CharField(max_length=120)
+    email = models.EmailField()
+    phone = models.CharField(max_length=30)
+    street = models.CharField(max_length=120)
+    street_no = models.CharField(max_length=20)
+    zip_code = models.CharField(max_length=10)
+    city = models.CharField(max_length=60)
+    total = models.DecimalField(max_digits=10, decimal_places=2)
+    # зачувај што има во кошничка (еден или повеќе типови карти)
+    items = models.JSONField(default=list)  # [{"event":"Concert X","ticket":"VIP","qty":2,"price":...}]
+    created_at = models.DateTimeField(auto_now_add=True)
+    status = models.CharField(max_length=20, default="created")
+    pdf = models.FileField(upload_to="tickets/", blank=True, null=True)  # ќе го пополниме
+
+    def __str__(self):
+        return f"{self.id} • {self.email}"
