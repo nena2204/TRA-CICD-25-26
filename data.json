@@ -1,0 +1,3621 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-06-03T17:25:37.837Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Skopje 9ti Maj 40 900",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-06-03T17:25:54.752Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Zdravko Colic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-08-10T21:14:44.316Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Zdravko Colic",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-08-10T21:15:38.942Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Zdravko Colic",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-08-10T21:16:02.209Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Zdravko Colic",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-08-10T21:20:08.237Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Ohrid Makedonski prosvetiteli b.b 6000 1200",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-08-10T21:20:30.130Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Ohrid Makedonski prosvetiteli b.b 6000 1200",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-08-10T21:20:33.206Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Sasa Matic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-08-10T21:33:24.344Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Shtip Engelsova 5 2000",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-08-10T21:37:13.841Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Dino Merlin",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-08-10T22:49:54.923Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Ohrid Makedonski prosvetiteli b.b 6000 3000",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-08-10T22:50:21.007Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Aca Lukas",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-08-10T23:58:08.475Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Aca Lukas",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-08-11T00:01:34.085Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Skopje testAdresssss 200",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-08-11T00:01:39.459Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "╨º╨╡╨║╨░╤ÿ╤£╨╕ ╨│╨╛ ╨ô╨╛╨┤╨╛",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-08-11T00:15:09.398Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Shtip Bulevar JNA b.b. 200",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-08-11T00:15:16.117Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "╨º╤â╨┤╨╛ ╨▓╨╛ ╨¿╤é╨╕╨┐",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-08-11T21:34:06.378Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "test test",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-08-14T17:59:03.528Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "test test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-08-14T17:59:48.517Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Marko pevac",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-08-31T00:10:05.188Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Zdravko Colic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-08-31T00:10:13.429Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Zdravko Colic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-08-31T00:10:21.725Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Zdravko Colic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-08-31T00:24:25.176Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Zdravko Colic ΓÇô Zdravko Colic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-09-05T13:36:57.740Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "╨º╨╡╨║╨░╤ÿ╤£╨╕ ╨│╨╛ ╨ô╨╛╨┤╨╛ ΓÇô ╨º╨╡╨║╨░╤ÿ╤£╨╕ ╨│╨╛ ╨ô╨╛╨┤╨╛",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-09-05T13:37:41.356Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Sasa Matic ΓÇô test",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-09-05T13:37:58.415Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Sasa Matic ΓÇô vip",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-09-05T13:38:46.578Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Sasa Matic ΓÇô VIP",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-09-05T13:38:52.531Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Sasa Matic ΓÇô VIP",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-09-05T13:39:10.106Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Sasa Matic ΓÇô STANDARD",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-09-05T13:39:52.069Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Sasa Matic ΓÇô STANDARD",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-09-05T13:44:10.663Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Dino Merlin ΓÇô BLOCK A",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-09-05T13:44:26.608Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Dino Merlin ΓÇô BLOCK B",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-09-05T13:44:49.771Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Dino Merlin ΓÇô SUPER VIP",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-09-05T14:13:23.071Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Sasa Matic",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Datetime\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-09-05T14:19:15.851Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Zdravko Colic",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Datetime\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-09-05T14:27:31.547Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Skopje ASNOM Blvd 1000, Skopje 1000 500",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-09-05T14:31:01.690Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "╨á╨Ü-╨Æ╨É╨á╨ö╨É╨á - ╨á╨Ü-╨ƒ╨ò╨¢╨ÿ╨í╨ó╨ò╨á",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-09-05T15:06:03.870Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "╨£╨É╨Ü╨ò╨ö╨₧╨¥╨ÿ╨ê╨É - ╨ƒ╨₧╨á╨ó╨ú╨ô╨É╨¢╨ÿ╨ê╨É, ╨ñ╨ú╨í╨ó╨É╨¢",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-09-05T15:08:42.496Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "╨£╨É╨Ü╨ò╨ö╨₧╨¥╨ÿ╨ê╨É - ╨ƒ╨₧╨á╨ó╨ú╨ô╨É╨¢╨ÿ╨ê╨É, ╨ñ╨ú╨í╨ó╨É╨¢ ΓÇô standard",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-09-05T15:09:10.299Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "╨á╨Ü-╨Æ╨É╨á╨ö╨É╨á - ╨á╨Ü-╨ƒ╨ò╨¢╨ÿ╨í╨ó╨ò╨á ΓÇô standard",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-09-05T15:10:58.035Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "╨º╨╡╨║╨░╤ÿ╤£╨╕ ╨│╨╛ ╨ô╨╛╨┤╨╛ ΓÇô ╨º╨╡╨║╨░╤ÿ╤£╨╕ ╨│╨╛ ╨ô╨╛╨┤╨╛",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Sale starts\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-09-05T15:11:13.761Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "╨º╨╡╨║╨░╤ÿ╤£╨╕ ╨│╨╛ ╨ô╨╛╨┤╨╛ ΓÇô standard",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-09-05T15:11:56.280Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "10",
+    "object_repr": "╨º╤â╨┤╨╛ ╨▓╨╛ ╨¿╤é╨╕╨┐ ΓÇô STANDARD",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-09-05T15:32:59.542Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "test test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-09-05T15:33:11.265Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Marko pevac",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-09-17T23:43:55.068Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "Sasa Matic ΓÇô PARTER A",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2025-09-17T23:44:27.575Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "12",
+    "object_repr": "Sasa Matic ΓÇô PARTER B",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2025-09-17T23:45:18.338Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "Sasa Matic ΓÇô VIP",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2025-09-17T23:45:55.751Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "14",
+    "object_repr": "Aca Lukas ΓÇô VIP 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2025-09-17T23:46:20.635Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "15",
+    "object_repr": "Aca Lukas ΓÇô VIP 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2025-09-17T23:46:45.416Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "16",
+    "object_repr": "Aca Lukas ΓÇô STANDARD",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2025-09-18T10:14:58.899Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ace",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2025-09-18T10:16:00.310Z",
+    "user": 2,
+    "content_type": 10,
+    "object_id": "17",
+    "object_repr": "Ace ΓÇô standard",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2025-09-18T10:18:21.529Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "nena",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2026-05-12T09:44:52.770Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Skopje Ruger Boskovikj 10 2000",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2026-05-12T09:45:04.637Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Finki rodenden",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$ztX8JEgR56biQqNGhpCAFE$PQBTd8AsB/8l5wfLcyKsydd6Jvx+/UemipvC9r8MIJ8=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "user",
+    "first_name": "",
+    "last_name": "",
+    "email": "nikolovanena123@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-06-01T23:19:35.362Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$zXGAFJrAKduoyQgLjx2fYV$zZtJuiFce7iqEaZqiwgp+ApqsFI85sCj7+kSA/LzDZE=",
+    "last_login": "2026-05-14T15:43:44.703Z",
+    "is_superuser": true,
+    "username": "nena",
+    "first_name": "",
+    "last_name": "",
+    "email": "nikolovanena123@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-06-01T23:23:21.907Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$Y9uUl0jhfoZw9k74ePdHcr$K6iau31+8Px7UthAHpaUhcaK2KicMUI3DDWRoGZmbas=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "nena123",
+    "first_name": "",
+    "last_name": "",
+    "email": "nikolovanena123@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-08-10T20:51:36.579Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$l2h9EHVg0KOzILkCjqBL8z$B3hfBCHsOWbOq2PqNBOckJVElTPLqSeENqz/sCaph4s=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "nena1234",
+    "first_name": "",
+    "last_name": "",
+    "email": "nikolovanena123@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-08-14T17:55:27.776Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$XcYutYozOW5Z1TheC6tjfZ$il275CQW5vzgu3+oJ34SBt89+Po99752DeWhv9hLPsk=",
+    "last_login": "2025-09-05T02:21:56.381Z",
+    "is_superuser": false,
+    "username": "sara",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-05T02:21:28.471Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$TgmIZ7Jdee0eHSA5zeT6HS$4pXA4ILRjUSjK1FLv7I7+k4MDmKVBPTdkIJ42uTypTY=",
+    "last_login": "2025-09-17T16:41:50.059Z",
+    "is_superuser": false,
+    "username": "ljupce",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-05T02:24:15.283Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$nkuyn2ujGDAxXgbIMOMakY$n6vYUqegzUxHHOoxfLzjfLOYeQxIMKpxPLSvrLkfX90=",
+    "last_login": "2025-09-07T19:37:42.054Z",
+    "is_superuser": false,
+    "username": "dragana",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-05T12:48:29.369Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$YZVAUvnnyDpsWwqkizlnWB$xeR4c4p+7icFfbcsiLMKsj7nXBY7fgP7xQtfjLGIdBM=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "MIla",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-05T14:14:53.547Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$GtkeXZCwpV6zOdCbm6EjxJ$NnQNyYBXVQjGt/G15JeA2V3XvsmoMYaNFwOEnHp7/5k=",
+    "last_login": "2025-09-05T14:19:30.125Z",
+    "is_superuser": false,
+    "username": "filip",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-05T14:17:07.801Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$JktssRwaEiecFX43ExQVA2$AI/qUxJy5Tz+XLCSRohh2Dzs6LrdjX79N8xBYZHLDZQ=",
+    "last_login": "2026-05-12T09:33:17.502Z",
+    "is_superuser": false,
+    "username": "riste",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-05T15:06:53.514Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$6iLJdA59W7JbrjjJ0SMUms$G/kK284Qnv220lgfYj57nf1ajTjTqnRW45W/PeGETcg=",
+    "last_login": "2025-09-07T19:53:11.821Z",
+    "is_superuser": false,
+    "username": "marko",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-07T19:50:09.807Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 12,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$WQqZCR3Ebq5d6RT4QMz5bP$9D7/AsqeSUJkUgeo8wNAZUrHkq7xvIgk2veJGRhZbs8=",
+    "last_login": "2025-09-08T12:24:26.505Z",
+    "is_superuser": false,
+    "username": "gose123",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-08T12:24:00.209Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 13,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$U2Tev0h1TVTzhWM59w1Swj$jfocWhvsDqn4MMNWm5Rv7uksn4JSSx1PGwu6TSXHErg=",
+    "last_login": "2025-09-11T11:18:59.109Z",
+    "is_superuser": false,
+    "username": "marko12345",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-11T11:18:44.213Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 14,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$ZdAnKkIGYWnMWDxV05MPAZ$e6Dvu6A91AlUXkE317rC07Y5TdGFQPuL6q1iI+f/rQA=",
+    "last_login": "2025-09-17T23:47:14.649Z",
+    "is_superuser": false,
+    "username": "user1",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-11T11:27:22.523Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 15,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$1gDN11u0YpDsASFyIYhUzH$xgFfordCeDRtkawyGb0cD1ZsV1CqrnrSrJe/1oLf6hg=",
+    "last_login": "2025-09-12T16:33:19.092Z",
+    "is_superuser": false,
+    "username": "user2",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-12T16:33:02.164Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 16,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$PhN8xUf7pydZYQdvOfzRGK$xex0zsOPD+lqgjxcaq7i6DujCG4o4khRYgYiS+LzJsw=",
+    "last_login": "2025-09-17T19:45:28.737Z",
+    "is_superuser": false,
+    "username": "usertest",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-17T19:45:08.513Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 17,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$H3p0Pk3SEJLcKPlqLatbcT$6uiB5LUo8wkXLTKlOINCZYfVvk57J5adBHyFvKJsrV0=",
+    "last_login": "2025-09-18T10:10:10.890Z",
+    "is_superuser": false,
+    "username": "fiziksmen",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-18T10:05:36.980Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 18,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$0jxdtH9siJddXz6ttR2AhZ$ejLiKZ4Jf892IXbrUFyti3UKhqQooQG9/iIGggZAGvc=",
+    "last_login": "2025-09-18T11:50:51.899Z",
+    "is_superuser": false,
+    "username": "stefankamenica",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-18T11:50:40.074Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 19,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$xCBHF0gNp48eqVYpwqbUrU$wAAWH/qh1odHoDlBenEXCJRtE/Sy7KvmuWbwMgIC3/Q=",
+    "last_login": "2025-09-25T14:08:14.702Z",
+    "is_superuser": false,
+    "username": "user10",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-09-25T14:07:45.900Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 20,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$WIG8NSivcv9OExpvXGWgVA$Y8LVlzuWHa2uJH5LVK7MN5EuQpq6Sxz2Sjkvry29Usg=",
+    "last_login": "2026-05-12T09:48:42.267Z",
+    "is_superuser": false,
+    "username": "kiko",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-12T09:48:18.968Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0tbf1k1hki9cxk25jko6bmydqg2dnkqi",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2Lv5R0nMGy_ZucAA5UpxUiLuTSCmgfTPz3iKmdalx7TzHkcRFgDj9bjmVJ7cd0CO1-yTL1JZ5zHJX5EG7vE3Er-vh_h3U1OtWo82gyGjwbLzGghqzCmzDUM6WigmKvS7ZDMYoBFDAgTRado7c1qL4fAG-dzbf:1uslT8:7_g_76n59118OWWrjNjbzUEOufvfSbtYhK48iLJJn3U",
+    "expire_date": "2025-09-14T17:03:54.457Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5u5le2zuquwy2n1278bkhnvc6s8ok0te",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2Lv5R0nMGy_ZucAA5UpxUiLuTSCmgfTPz3iKmdalx7TzHkcRFgDj9bjmVJ7cd0CO1-yTL1JZ5zHJX5EG7vE3Er-vh_h3U1OtWo82gyGjwbLzGghqzCmzDUM6WigmKvS7ZDMYoBFDAgTRado7c1qL4fAG-dzbf:1ulD2T:b6BwC3GPpmnQp4TbMccc37fC8I74TJu6xAVc3tBVOVg",
+    "expire_date": "2025-08-24T20:53:09.323Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6o5kyfkz45g2cxqsudmqursranq0c6lw",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pBCgQ4u3fcMZJgBqRqalHZlvLtt0oVu_3vvv0XAbS1ha2kJE4urUF5cfseI9Ez1IPzAep8lzXVdpigPRZ60yXHm9Lqd7t9BwVb2OoProx-IUBtnjCJwUflIjKB1ysko6DNZGHxnO7IcPQNYQr-rjrUTny8QFjgg:1v1mdq:GfSjoRuV5rzoko8P5mslAU9FAZcmt3iMEuJR6uxrh-E",
+    "expire_date": "2025-10-09T14:08:14.715Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9dwvkcjmfujmb1agx104es7309yssfke",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2Lv5R0nMGy_ZucAA5UpxUiLuTSCmgfTPz3iKmdalx7TzHkcRFgDj9bjmVJ7cd0CO1-yTL1JZ5zHJX5EG7vE3Er-vh_h3U1OtWo82gyGjwbLzGghqzCmzDUM6WigmKvS7ZDMYoBFDAgTRado7c1qL4fAG-dzbf:1uLs2A:KjInSVamBxi6DEDjDfxReiFPtW-QCqeMCwmpMkvyXms",
+    "expire_date": "2025-06-15T23:24:06.029Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ova2ck30pvpj5ghzgpy6vk8zif2ddj39",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSG8BMale7-BzAxEqgaS0q6M_26bdKHbe865b5FwXWpaR5nTlMVF6CBOvyMhP0vbSX5gu3fJvS3zRHJX5EGHvPVcXtfD_TuoOOpWK405OtQENgCCZwQqhcF5H9gaJGfOLkSIm0eGowJjMrPzlmwsQYnPFwloN94:1uzBWS:QDCwGhaVXVKjr3WjEuYt1lVjMbUBGw_yj2Josr5Uq24",
+    "expire_date": "2025-10-02T10:05:52.113Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "t9ttqbmx479qq7fyqmfqbbw3ni9yczj2",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2Lv5R0nMGy_ZucAA5UpxUiLuTSCmgfTPz3iKmdalx7TzHkcRFgDj9bjmVJ7cd0CO1-yTL1JZ5zHJX5EG7vE3Er-vh_h3U1OtWo82gyGjwbLzGghqzCmzDUM6WigmKvS7ZDMYoBFDAgTRado7c1qL4fAG-dzbf:1uskwv:7QKrtk4g_MgW2tg4MWllkF_mWGsLvfv1vj-bI2yZ3x0",
+    "expire_date": "2025-09-14T16:30:37.078Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yidf64j0l85bcqe4ckll5vjswaujvuye",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2Lv5R0nMGy_ZucAA5UpxUiLuTSCmgfTPz3iKmdalx7TzHkcRFgDj9bjmVJ7cd0CO1-yTL1JZ5zHJX5EG7vE3Er-vh_h3U1OtWo82gyGjwbLzGghqzCmzDUM6WigmKvS7ZDMYoBFDAgTRado7c1qL4fAG-dzbf:1uskvz:hyGBslK0VN1VOxzFm2EGXxFbKyd2yGLUuRacqngTBbQ",
+    "expire_date": "2025-09-14T16:29:39.028Z"
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "example.com",
+    "name": "example.com"
+  }
+},
+{
+  "model": "events.eventlocation",
+  "pk": 1,
+  "fields": {
+    "city": "Skopje",
+    "address": "9ti Maj 40",
+    "name": "boris trajkovski",
+    "capacity": 900
+  }
+},
+{
+  "model": "events.eventlocation",
+  "pk": 2,
+  "fields": {
+    "city": "Ohrid",
+    "address": "Makedonski prosvetiteli b.b 6000",
+    "name": "Biljanini Izvori",
+    "capacity": 1200
+  }
+},
+{
+  "model": "events.eventlocation",
+  "pk": 3,
+  "fields": {
+    "city": "Shtip",
+    "address": "Engelsova 5",
+    "name": "Gradski stadion",
+    "capacity": 2000
+  }
+},
+{
+  "model": "events.eventlocation",
+  "pk": 4,
+  "fields": {
+    "city": "Ohrid",
+    "address": "Makedonski prosvetiteli b.b 6000",
+    "name": "Biljanini Izvori",
+    "capacity": 3000
+  }
+},
+{
+  "model": "events.eventlocation",
+  "pk": 5,
+  "fields": {
+    "city": "Skopje",
+    "address": "testAdresssss",
+    "name": "TestName",
+    "capacity": 200
+  }
+},
+{
+  "model": "events.eventlocation",
+  "pk": 6,
+  "fields": {
+    "city": "Shtip",
+    "address": "Bulevar JNA b.b.",
+    "name": "Dom na Kultura",
+    "capacity": 200
+  }
+},
+{
+  "model": "events.eventlocation",
+  "pk": 7,
+  "fields": {
+    "city": "Skopje",
+    "address": "ASNOM Blvd 1000, Skopje 1000",
+    "name": "Jane Sandanski Sports Center",
+    "capacity": 500
+  }
+},
+{
+  "model": "events.eventlocation",
+  "pk": 8,
+  "fields": {
+    "city": "Skopje",
+    "address": "Ruger Boskovikj 10",
+    "name": "pre ja ko",
+    "capacity": 2000
+  }
+},
+{
+  "model": "events.event",
+  "pk": 1,
+  "fields": {
+    "name": "Zdravko Colic",
+    "category": "concert",
+    "datetime": "2026-06-03T17:22:24Z",
+    "description": "╨¥╨╡╨╖╨░╨▒╨╛╤Ç╨░╨▓╨╜╨░ ╨▓╨╡╤ç╨╡╤Ç ╤ü╨╛ ╨╗╨╡╨│╨╡╨╜╨┤╨░╤é╨░ ╨ù╨┤╤Ç╨░╨▓╨║╨╛ ╨º╨╛╨╗╨╕╤£ ΓÇô ╤â╨╢╨╕╨▓╨░╤ÿ╤é╨╡ ╨▓╨╛ ╨╜╨╡╨│╨╛╨▓╨╕╤é╨╡ ╨╜╨░╤ÿ╨│╨╛╨╗╨╡╨╝╨╕ ╤à╨╕╤é╨╛╨▓╨╕ ╨╕ ╨╜╨╡╨┐╨╛╨▓╤é╨╛╤Ç╨╗╨╕╨▓╨░ ╨╡╨╜╨╡╤Ç╨│╨╕╤ÿ╨░!",
+    "ticket_price": 500,
+    "image": "images/zdravko_colic.jpg",
+    "location": 1,
+    "is_popular": true
+  }
+},
+{
+  "model": "events.event",
+  "pk": 2,
+  "fields": {
+    "name": "Sasa Matic",
+    "category": "concert",
+    "datetime": "2026-08-27T21:00:00Z",
+    "description": "╨Æ╨╡╤ç╨╡╤Ç ╨╕╤ü╨┐╨╛╨╗╨╜╨╡╤é╨░ ╤ü╨╛ ╨╡╨╝╨╛╤å╨╕╨╕ ╨╕ ╨╜╨╡╨╖╨░╨▒╨╛╤Ç╨░╨▓╨╜╨╕ ╨╝╨╛╨╝╨╡╨╜╤é╨╕ ╤ü╨╛ ╨í╨░╤ê╨░ ╨£╨░╤é╨╕╤£ ΓÇô ╨╝╨░╤ÿ╤ü╤é╨╛╤Ç╨╛╤é ╨╜╨░ ╨▒╨░╨╗╨░╨┤╨╕╤é╨╡ ╨╕ ╨╖╨░╨▒╨░╨▓╨░╤é╨░. ╨ƒ╨╛╨┤╨│╨╛╤é╨▓╨╡╤é╨╡ ╤ü╨╡ ╨╖╨░ ╤Ç╨╛╨╝╨░╨╜╤é╨╕╤ç╨╜╨╕ ╨╝╨╡╨╗╨╛╨┤╨╕╨╕, ╨╡╨╜╨╡╤Ç╨│╨╕╤ç╨╜╨╕ ╤Ç╨╕╤é╨╝╨╛╨▓╨╕ ╨╕ ╨░╤é╨╝╨╛╤ü╤ä╨╡╤Ç╨░ ╤ê╤é╨╛ ╤£╨╡ ╤ÿ╨░ ╨┐╨░╨╝╨╡╤é╨╕╤é╨╡ ╨┤╨╛╨╗╨│╨╛.",
+    "ticket_price": 500,
+    "image": "images/sasa_matic.jpg",
+    "location": 2,
+    "is_popular": true
+  }
+},
+{
+  "model": "events.event",
+  "pk": 3,
+  "fields": {
+    "name": "Dino Merlin",
+    "category": "concert",
+    "datetime": "2026-07-22T21:30:00Z",
+    "description": "╨£╨░╨│╨╕╤ç╨╜╨░╤é╨░ ╨╜╨╛╤£ ╤ü╨╛ ╨ö╨╕╨╜╨╛ ╨£╨╡╤Ç╨╗╨╕╨╜ ΓÇô ╨╝╨░╤ÿ╤ü╤é╨╛╤Ç╨╛╤é ╨╜╨░ ╤ü╤å╨╡╨╜╨░╤é╨░ ╨╕ ╨░╨▓╤é╨╛╤Ç ╨╜╨░ ╨▒╨╡╨╖╨▓╤Ç╨╡╨╝╨╡╨╜╤ü╨║╨╕ ╤à╨╕╤é╨╛╨▓╨╕. ╨₧╤ç╨╡╨║╤â╨▓╨░╤ÿ╤é╨╡ ╤ü╨┐╨╡╨║╤é╨░╨║╤â╨╗╨░╤Ç╨╡╨╜ ╨╜╨░╤ü╤é╨░╨┐, ╨╡╨╝╨╛╤é╨╕╨▓╨╜╨╕ ╨┐╨╡╤ü╨╜╨╕ ╨╕ ╨╡╨╜╨╡╤Ç╨│╨╕╤ÿ╨░ ╤ê╤é╨╛ ╤ÿ╨░ ╨╛╤ü╨▓╨╛╤ÿ╤â╨▓╨░ ╨┐╤â╨▒╨╗╨╕╨║╨░╤é╨░ ╤ê╨╕╤Ç╤â╨╝ ╤ü╨▓╨╡╤é╨╛╤é.",
+    "ticket_price": 600,
+    "image": "images/dino_merlin.jpg",
+    "location": 3,
+    "is_popular": true
+  }
+},
+{
+  "model": "events.event",
+  "pk": 4,
+  "fields": {
+    "name": "Aca Lukas",
+    "category": "concert",
+    "datetime": "2026-04-15T22:00:00Z",
+    "description": "╨ò╨║╤ü╨┐╨╗╨╛╨╖╨╕╨▓╨╜╨░ ╨╜╨╛╤£ ╤ü╨╛ ╨É╤å╨░ ╨¢╤â╨║╨░╤ü ΓÇô ╨║╤Ç╨░╨╗╨╛╤é ╨╜╨░ ╨╜╨╛╤£╨╜╨╕╨╛╤é ╨╢╨╕╨▓╨╛╤é ╨╕ ╨╖╨░╨▒╨░╨▓╨╕╤é╨╡ ╨┤╨╛ ╨╖╨╛╤Ç╨╕. ╨ƒ╨╛╨┤╨│╨╛╤é╨▓╨╡╤é╨╡ ╤ü╨╡ ╨╖╨░ ╨╝╨╛╤£╨╜╨╕ ╤à╨╕╤é╨╛╨▓╨╕, ╨╜╨╡╨▓╨╡╤Ç╨╛╤ÿ╨░╤é╨╜╨░ ╨╡╨╜╨╡╤Ç╨│╨╕╤ÿ╨░ ╨╕ ╨░╤é╨╝╨╛╤ü╤ä╨╡╤Ç╨░ ╤ê╤é╨╛ ╤£╨╡ ╤ÿ╨░ ╨║╤Ç╨╡╨╜╨╡ ╨┐╤â╨▒╨╗╨╕╨║╨░╤é╨░ ╨╜╨░ ╨╜╨╛╨╖╨╡.",
+    "ticket_price": 900,
+    "image": "images/aca_lukas.jpg",
+    "location": 4,
+    "is_popular": true
+  }
+},
+{
+  "model": "events.event",
+  "pk": 5,
+  "fields": {
+    "name": "╨º╨╡╨║╨░╤ÿ╤£╨╕ ╨│╨╛ ╨ô╨╛╨┤╨╛",
+    "category": "theatre",
+    "datetime": "2026-11-10T18:00:00Z",
+    "description": "╨É╨┐╤ü╤â╤Ç╨┤╨╜╨░ ╨║╨╛╨╝╨╡╨┤╨╕╤ÿ╨░ ╨╖╨░ ╤ü╨╝╨╕╤ü╨╗╨░╤é╨░ ╨╜╨░ ╨╢╨╕╨▓╨╛╤é╨╛╤é, ╨┐╤Ç╨╕╤ÿ╨░╤é╨╡╨╗╤ü╤é╨▓╨╛╤é╨╛ ╨╕ ╨▒╨╡╤ü╨║╤Ç╨░╤ÿ╨╜╨╛╤é╨╛ ╤ç╨╡╨║╨░╤Ü╨╡.",
+    "ticket_price": 150,
+    "image": "images/cekajki_go_godo.jpg",
+    "location": 5,
+    "is_popular": false
+  }
+},
+{
+  "model": "events.event",
+  "pk": 6,
+  "fields": {
+    "name": "╨º╤â╨┤╨╛ ╨▓╨╛ ╨¿╤é╨╕╨┐",
+    "category": "theatre",
+    "datetime": "2026-08-01T17:00:00Z",
+    "description": "╨╝╨╛╨┤╨╡╤Ç╨╜╨░ ╨║╨╛╨╝╨╡╨┤╨╕╤ÿ╨░ ╨╕╨╜╤ü╨┐╨╕╤Ç╨╕╤Ç╨░╨╜╨░ ╨╛╨┤ ╨▓╨╕╤ü╤é╨╕╨╜╤ü╨║╨╕ ╨╜╨░╤ü╤é╨░╨╜╨╕ ╨╕ ╨▒╨░╨╗╨║╨░╨╜╤ü╨║╨╕╨╛╤é ╨╝╨╡╨╜╤é╨░╨╗╨╕╤é╨╡╤é.",
+    "ticket_price": 100,
+    "image": "images/strangeShtip.jpg",
+    "location": 6,
+    "is_popular": false
+  }
+},
+{
+  "model": "events.event",
+  "pk": 9,
+  "fields": {
+    "name": "╨á╨Ü-╨Æ╨É╨á╨ö╨É╨á - ╨á╨Ü-╨ƒ╨ò╨¢╨ÿ╨í╨ó╨ò╨á",
+    "category": "sport",
+    "datetime": "2026-06-07T19:30:00Z",
+    "description": "╨ô╨╛╨╗╨╡╨╝╨╛╤é╨╛ ╨╝╨░╨║╨╡╨┤╨╛╨╜╤ü╨║╨╛ ╤Ç╨░╨║╨╛╨╝╨╡╤é╨╜╨╛ ╨┤╨╡╤Ç╨▒╨╕ ╨┐╨╛╨╝╨╡╤ô╤â ╨Æ╨░╤Ç╨┤╨░╤Ç 1961 ╨╕ ╨ò╤â╤Ç╨╛╤ä╨░╤Ç╨╝ ╨ƒ╨╡╨╗╨╕╤ü╤é╨╡╤Ç ╤ü╨╡ ╨╕╨│╤Ç╨░ ╨▓╨╛ ╨í╨║╨╛╨┐╤ÿ╨╡! ╨₧╤ç╨╡╨║╤â╨▓╨░╤ÿ ╨╢╨╡╤ü╤é╨╛╨║ ╨┤╤â╨╡╨╗, ╨┐╨╛╨╗╨╜╨╕ ╤é╤Ç╨╕╨▒╨╕╨╜╨╕ ╨╕ ╨╜╨░╨▓╨╕╨▓╨░╤ç╨║╨░ ╨░╤é╨╝╨╛╤ü╤ä╨╡╤Ç╨░ ╨║╨░╨║╨▓╨░ ╤ê╤é╨╛ ╨┤╨╛╨╗╨╕╨║╤â╨▓╨░ ╨╜╨░ ╨╜╨░╤ÿ╨│╨╛╨╗╨╡╨╝╨╕╤é╨╡ ╤Ç╨╕╨▓╨░╨╗╨╕ ╨▓╨╛ ╨┤╨╛╨╝╨░╤ê╨╜╨╕╨╛╤é ╤Ç╨░╨║╨╛╨╝╨╡╤é. ╨ÿ╨┤╨╡╨░╨╗╨╡╨╜ ╨╜╨░╤ü╤é╨░╨╜ ╨╖╨░ ╤ü╨╕╤é╨╡ ╤Ö╤â╨▒╨╕╤é╨╡╨╗╨╕ ╨╜╨░ ╤ü╨┐╨╛╤Ç╤é ╨╕ ╨┤╨╛╨▒╤Ç╨░ ╨░╨┤╤Ç╨╡╨╜╨░╨╗╨╕╨╜╤ü╨║╨░ ╨▓╨╡╤ç╨╡╤Ç.",
+    "ticket_price": 150,
+    "image": "images/rkvardar-rkpelister_O0NDUHz.png",
+    "location": 7,
+    "is_popular": false
+  }
+},
+{
+  "model": "events.event",
+  "pk": 10,
+  "fields": {
+    "name": "╨£╨É╨Ü╨ò╨ö╨₧╨¥╨ÿ╨ê╨É - ╨ƒ╨₧╨á╨ó╨ú╨ô╨É╨¢╨ÿ╨ê╨É, ╨ñ╨ú╨í╨ó╨É╨¢",
+    "category": "sport",
+    "datetime": "2026-01-31T19:00:00Z",
+    "description": "╨ô╨╛╨╗╨╡╨╝ ╤ä╤â╤é╤ü╨░╨╗ ╤ü╨┐╨╡╨║╤é╨░╨║╨╗ ╨▓╨╛ ╨í╨║╨╛╨┐╤ÿ╨╡! ╨É ╤Ç╨╡╨┐╤Ç╨╡╨╖╨╡╨╜╤é╨░╤å╨╕╤ÿ╨░╤é╨░ ╨╜╨░ ╨£╨░╨║╨╡╨┤╨╛╨╜╨╕╤ÿ╨░ ╨╕╨╖╨╗╨╡╨│╤â╨▓╨░ ╨╜╨░ ╨┐╨░╤Ç╨║╨╡╤é ╨┐╤Ç╨╛╤é╨╕╨▓ ╨┤╨▓╨╛╨║╤Ç╨░╤é╨╜╨╕╨╛╤é ╨╡╨▓╤Ç╨╛╨┐╤ü╨║╨╕ ╨┐╤Ç╨▓╨░╨║ ╨ƒ╨╛╤Ç╤é╤â╨│╨░╨╗╨╕╤ÿ╨░. ╨¥╨░ 31 ╤ÿ╨░╨╜╤â╨░╤Ç╨╕ 2025, ╤ü╨╛ ╨┐╨╛╤ç╨╡╤é╨╛╨║ ╨▓╨╛ 19:00, ╨í╨ª ΓÇ₧╨ê╨░╨╜╨╡ ╨í╨░╨╜╨┤╨░╨╜╤ü╨║╨╕ΓÇ£ ╤£╨╡ ╨▒╨╕╨┤╨╡ ╨╕╤ü╨┐╨╛╨╗╨╜╨╡╤é ╤ü╨╛ ╨░╨┤╤Ç╨╡╨╜╨░╨╗╨╕╨╜, ╨▒╤Ç╨╖╨╕ ╨╜╨░╨┐╨░╨┤╨╕ ╨╕ ╨╝╨╜╨╛╨│╤â ╨╡╨╝╨╛╤å╨╕╨╕ ╨╛╨┤ ╤é╤Ç╨╕╨▒╨╕╨╜╨╕╤é╨╡. ╨₧╨▒╨╡╨╖╨▒╨╡╨┤╨╕ ╨▒╨╕╨╗╨╡╤é ╨╜╨░╨▓╤Ç╨╡╨╝╨╡ ╨╕ ╨┐╨╛╨┤╨┤╤Ç╨╢╨╕ ╨│╨╕ ╤å╤Ç╨▓╨╡╨╜╨╛-╨╢╨╛╨╗╤é╨╕╤é╨╡!",
+    "ticket_price": 200,
+    "image": "images/makedonija-portugalija.png",
+    "location": 7,
+    "is_popular": true
+  }
+},
+{
+  "model": "events.event",
+  "pk": 11,
+  "fields": {
+    "name": "Ace",
+    "category": "classical",
+    "datetime": "2026-09-18T10:14:17Z",
+    "description": "odlicna zabava so ace",
+    "ticket_price": 200,
+    "image": "images/Screenshot_2025-09-17_023105.png",
+    "location": 3,
+    "is_popular": true
+  }
+},
+{
+  "model": "events.event",
+  "pk": 12,
+  "fields": {
+    "name": "nena",
+    "category": "classical",
+    "datetime": "2026-09-18T10:17:55Z",
+    "description": "zabava so nena",
+    "ticket_price": 200,
+    "image": "images/Screenshot_2025-04-02_032605.png",
+    "location": 1,
+    "is_popular": true
+  }
+},
+{
+  "model": "events.event",
+  "pk": 13,
+  "fields": {
+    "name": "Finki rodenden",
+    "category": "other",
+    "datetime": "2026-10-10T20:00:00Z",
+    "description": "mnogu jaka zabava au maui, finki prejak faks banana",
+    "ticket_price": 98,
+    "image": "images/Screenshot_2026-04-26_213354.png",
+    "location": 8,
+    "is_popular": true
+  }
+},
+{
+  "model": "events.ticket",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "event": 1,
+    "type": "regular"
+  }
+},
+{
+  "model": "events.ticket",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "event": 1,
+    "type": "vip"
+  }
+},
+{
+  "model": "events.ticket",
+  "pk": 3,
+  "fields": {
+    "user": 2,
+    "event": 1,
+    "type": "extra-vip"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 1,
+  "fields": {
+    "event": 1,
+    "name": "Zdravko Colic",
+    "price": "500.00",
+    "qty": 1,
+    "sale_starts": "2026-08-20T21:00:00Z",
+    "sale_ends": "2026-08-27T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 2,
+  "fields": {
+    "event": 5,
+    "name": "standard",
+    "price": "150.00",
+    "qty": null,
+    "sale_starts": "2025-09-05T15:10:51Z",
+    "sale_ends": "2026-08-27T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 3,
+  "fields": {
+    "event": 2,
+    "name": "STANDARD",
+    "price": "500.00",
+    "qty": null,
+    "sale_starts": "2025-09-05T13:37:35Z",
+    "sale_ends": "2026-08-27T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 4,
+  "fields": {
+    "event": 2,
+    "name": "VIP",
+    "price": "700.00",
+    "qty": null,
+    "sale_starts": "2025-09-05T13:37:52Z",
+    "sale_ends": "2026-08-27T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 5,
+  "fields": {
+    "event": 3,
+    "name": "BLOCK A",
+    "price": "600.00",
+    "qty": null,
+    "sale_starts": "2025-09-05T13:44:05Z",
+    "sale_ends": "2026-08-27T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 6,
+  "fields": {
+    "event": 3,
+    "name": "BLOCK B",
+    "price": "600.00",
+    "qty": null,
+    "sale_starts": "2025-09-05T13:44:21Z",
+    "sale_ends": "2026-08-27T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 7,
+  "fields": {
+    "event": 3,
+    "name": "SUPER VIP",
+    "price": "1000.00",
+    "qty": null,
+    "sale_starts": "2025-09-05T13:44:42Z",
+    "sale_ends": "2026-08-27T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 8,
+  "fields": {
+    "event": 10,
+    "name": "standard",
+    "price": "200.00",
+    "qty": null,
+    "sale_starts": "2025-09-05T15:08:23Z",
+    "sale_ends": "2026-12-12T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 9,
+  "fields": {
+    "event": 9,
+    "name": "standard",
+    "price": "150.00",
+    "qty": null,
+    "sale_starts": "2025-09-05T15:09:02Z",
+    "sale_ends": "2026-12-12T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 10,
+  "fields": {
+    "event": 6,
+    "name": "STANDARD",
+    "price": "100.00",
+    "qty": null,
+    "sale_starts": "2025-09-05T15:11:51Z",
+    "sale_ends": "2026-12-12T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 11,
+  "fields": {
+    "event": 2,
+    "name": "PARTER A",
+    "price": "300.00",
+    "qty": 1,
+    "sale_starts": "2025-09-17T23:43:40Z",
+    "sale_ends": "2026-09-17T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 12,
+  "fields": {
+    "event": 2,
+    "name": "PARTER B",
+    "price": "300.00",
+    "qty": 1,
+    "sale_starts": "2025-09-17T23:44:10Z",
+    "sale_ends": "2026-09-17T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 13,
+  "fields": {
+    "event": 2,
+    "name": "VIP",
+    "price": "700.00",
+    "qty": 1,
+    "sale_starts": "2025-09-17T23:45:04Z",
+    "sale_ends": "2026-09-17T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 14,
+  "fields": {
+    "event": 4,
+    "name": "VIP 1",
+    "price": "900.00",
+    "qty": 1,
+    "sale_starts": "2025-09-17T23:45:48Z",
+    "sale_ends": "2026-09-17T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 15,
+  "fields": {
+    "event": 4,
+    "name": "VIP 2",
+    "price": "700.00",
+    "qty": 1,
+    "sale_starts": "2025-09-17T23:46:11Z",
+    "sale_ends": "2026-09-17T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 16,
+  "fields": {
+    "event": 4,
+    "name": "STANDARD",
+    "price": "600.00",
+    "qty": 1,
+    "sale_starts": "2025-09-17T23:46:37Z",
+    "sale_ends": "2026-09-17T00:00:00Z"
+  }
+},
+{
+  "model": "events.tickettype",
+  "pk": 17,
+  "fields": {
+    "event": 11,
+    "name": "standard",
+    "price": "200.00",
+    "qty": null,
+    "sale_starts": "2025-09-18T10:15:52Z",
+    "sale_ends": "2026-09-18T00:00:00Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-08-31T00:24:38.650Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-08-31T00:25:31.771Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 3,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-08-31T00:26:36.814Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 4,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-08-31T00:27:16.816Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 5,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-08-31T00:28:53.094Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 6,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-08-31T00:29:15.183Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 7,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-08-31T00:29:51.350Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 8,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-08-31T00:42:40.112Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 9,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-08-31T15:42:36.726Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 10,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-08-31T15:51:34.763Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 11,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-08-31T15:51:46.841Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 12,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T02:28:40.512Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 13,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T02:29:08.963Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 14,
+  "fields": {
+    "user": null,
+    "session_key": "vwpnfetcz9uqsx5hlax7xho6lhdvf0rg",
+    "status": "cart",
+    "created_at": "2025-09-05T02:47:19.750Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 15,
+  "fields": {
+    "user": 7,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T12:50:21.297Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 16,
+  "fields": {
+    "user": 7,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T13:00:45.459Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 17,
+  "fields": {
+    "user": 7,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T13:02:23.186Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 18,
+  "fields": {
+    "user": 7,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T13:02:28.171Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 19,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T13:39:28.216Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 20,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T14:12:49.153Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 21,
+  "fields": {
+    "user": 7,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T14:14:01.516Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 22,
+  "fields": {
+    "user": 9,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T14:17:41.990Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 23,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:09:38.015Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 24,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:09:58.283Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 25,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:12:26.579Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 26,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:12:47.024Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 27,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:13:06.111Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 28,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:13:55.055Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 29,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:24:01.626Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 30,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:24:05.555Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 31,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:24:19.563Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 32,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:28:27.823Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 33,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:29:19.058Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 34,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:29:35.419Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 35,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:31:59.733Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 36,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:35:05.076Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 37,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:36:40.954Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 38,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:38:01.063Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 39,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:43:51.687Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 40,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:43:52.562Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 41,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:44:02.384Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 42,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:45:31.264Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 43,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:48:59.574Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 44,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:49:09.977Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 45,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:51:58.017Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 46,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T15:53:33.290Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 47,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T16:07:22.978Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 48,
+  "fields": {
+    "user": 7,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-05T16:10:24.999Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 49,
+  "fields": {
+    "user": 7,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-07T19:37:59.199Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 50,
+  "fields": {
+    "user": 7,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-07T19:48:58.859Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 51,
+  "fields": {
+    "user": 11,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-07T19:50:34.854Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 52,
+  "fields": {
+    "user": 11,
+    "session_key": "",
+    "status": "cart",
+    "created_at": "2025-09-07T19:53:16.938Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 53,
+  "fields": {
+    "user": null,
+    "session_key": "fud9cy5753os6gnv6m0fztc6ugg5agml",
+    "status": "cart",
+    "created_at": "2025-09-07T19:55:21.134Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 54,
+  "fields": {
+    "user": 12,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-08T12:24:30.865Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 55,
+  "fields": {
+    "user": 12,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-08T12:25:04.741Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 56,
+  "fields": {
+    "user": 12,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-08T12:34:37.737Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 57,
+  "fields": {
+    "user": null,
+    "session_key": "awxdsz5tpr5werpk5zsnoih8yz2k3wfl",
+    "status": "cart",
+    "created_at": "2025-09-11T11:02:43.769Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 58,
+  "fields": {
+    "user": 13,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-11T11:19:01.684Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 59,
+  "fields": {
+    "user": 13,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-11T11:19:38.495Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 60,
+  "fields": {
+    "user": 13,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-11T11:19:53.523Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 61,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-11T11:27:57.319Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 62,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-11T12:40:05.585Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 63,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-11T12:40:27.388Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 64,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-11T12:41:42.512Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 65,
+  "fields": {
+    "user": 15,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-12T16:33:31.385Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 66,
+  "fields": {
+    "user": 15,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-16T00:59:09.292Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 67,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-16T00:59:46.984Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 68,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-16T01:02:52.715Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 69,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-16T01:11:40.301Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 70,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-16T01:25:18.780Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 71,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T15:50:43.338Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 72,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T15:52:05.182Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 73,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T15:52:33.282Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 74,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T16:41:55.935Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 75,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T16:43:56.257Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 76,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T16:56:15.381Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 77,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T16:56:59.524Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 78,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T16:58:11.249Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 79,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T16:58:12.303Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 80,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T16:58:23.329Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 81,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T16:58:24.490Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 82,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T16:59:05.580Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 83,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T16:59:07.829Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 84,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T16:59:33.931Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 85,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T16:59:37.088Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 86,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T17:00:55.877Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 87,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T17:00:58.680Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 88,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T17:07:51.695Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 89,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T17:07:55.026Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 90,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T17:07:56.690Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 91,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T17:16:52.845Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 92,
+  "fields": {
+    "user": 6,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T19:43:49.902Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 93,
+  "fields": {
+    "user": 16,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T19:45:35.038Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 94,
+  "fields": {
+    "user": 16,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T19:47:55.101Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 95,
+  "fields": {
+    "user": 16,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T19:49:07.587Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 96,
+  "fields": {
+    "user": 16,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T19:49:46.788Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 97,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T23:48:09.215Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 98,
+  "fields": {
+    "user": 14,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-17T23:48:55.649Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 99,
+  "fields": {
+    "user": null,
+    "session_key": "e89s5d8iprh2s0mdayslsvfw26yhl29z",
+    "status": "cart",
+    "created_at": "2025-09-18T10:04:57.419Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 100,
+  "fields": {
+    "user": 17,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-18T10:06:28.988Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 101,
+  "fields": {
+    "user": 17,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-18T10:07:41.661Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 102,
+  "fields": {
+    "user": 17,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-18T10:08:06.084Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 103,
+  "fields": {
+    "user": 17,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-18T10:12:51.877Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 104,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-18T10:16:10.111Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 105,
+  "fields": {
+    "user": 18,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-18T11:51:43.621Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 106,
+  "fields": {
+    "user": 18,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-18T11:53:17.107Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 107,
+  "fields": {
+    "user": null,
+    "session_key": "jv7j9xfaz4sojpdzfi8n2ntg6j8u4yyv",
+    "status": "cart",
+    "created_at": "2025-09-25T14:05:01.156Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 108,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-25T14:05:19.886Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 109,
+  "fields": {
+    "user": 19,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-25T14:08:35.627Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 110,
+  "fields": {
+    "user": 19,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2025-09-25T14:09:46.837Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 111,
+  "fields": {
+    "user": 10,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2026-05-12T09:33:47.655Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 112,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "status": "cart",
+    "created_at": "2026-05-12T09:46:25.341Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 113,
+  "fields": {
+    "user": 20,
+    "session_key": "",
+    "status": "placed",
+    "created_at": "2026-05-12T09:49:16.849Z"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 4,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 2,
+  "fields": {
+    "order": 3,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 3,
+  "fields": {
+    "order": 4,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 4,
+  "fields": {
+    "order": 5,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 10,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 5,
+  "fields": {
+    "order": 6,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 13,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 7,
+  "fields": {
+    "order": 7,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 11,
+  "fields": {
+    "order": 8,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 2,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 12,
+  "fields": {
+    "order": 9,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 3,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 16,
+  "fields": {
+    "order": 12,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 17,
+  "fields": {
+    "order": 11,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 2,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 18,
+  "fields": {
+    "order": 15,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 19,
+  "fields": {
+    "order": 16,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 20,
+  "fields": {
+    "order": 17,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 21,
+  "fields": {
+    "order": 19,
+    "event": 2,
+    "ticket_type": 3,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 22,
+  "fields": {
+    "order": 19,
+    "event": 2,
+    "ticket_type": 4,
+    "qty": 2,
+    "unit_price": "700.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 23,
+  "fields": {
+    "order": 20,
+    "event": 3,
+    "ticket_type": 7,
+    "qty": 1,
+    "unit_price": "1000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 24,
+  "fields": {
+    "order": 18,
+    "event": 3,
+    "ticket_type": 6,
+    "qty": 1,
+    "unit_price": "600.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 25,
+  "fields": {
+    "order": 21,
+    "event": 2,
+    "ticket_type": 3,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 26,
+  "fields": {
+    "order": 22,
+    "event": 2,
+    "ticket_type": 3,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 27,
+  "fields": {
+    "order": 23,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 28,
+  "fields": {
+    "order": 24,
+    "event": 2,
+    "ticket_type": 3,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 29,
+  "fields": {
+    "order": 25,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 30,
+  "fields": {
+    "order": 26,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 31,
+  "fields": {
+    "order": 27,
+    "event": 6,
+    "ticket_type": 10,
+    "qty": 1,
+    "unit_price": "100.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 32,
+  "fields": {
+    "order": 31,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 33,
+  "fields": {
+    "order": 36,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 34,
+  "fields": {
+    "order": 48,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 35,
+  "fields": {
+    "order": 49,
+    "event": 5,
+    "ticket_type": 2,
+    "qty": 1,
+    "unit_price": "150.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 36,
+  "fields": {
+    "order": 50,
+    "event": 6,
+    "ticket_type": 10,
+    "qty": 1,
+    "unit_price": "100.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 37,
+  "fields": {
+    "order": 51,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 15,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 38,
+  "fields": {
+    "order": 53,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 5,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 39,
+  "fields": {
+    "order": 54,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 5,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 40,
+  "fields": {
+    "order": 55,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 41,
+  "fields": {
+    "order": 56,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 44,
+  "fields": {
+    "order": 57,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 45,
+  "fields": {
+    "order": 58,
+    "event": 3,
+    "ticket_type": 5,
+    "qty": 1,
+    "unit_price": "600.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 46,
+  "fields": {
+    "order": 59,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 2,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 47,
+  "fields": {
+    "order": 60,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 2,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 48,
+  "fields": {
+    "order": 61,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 49,
+  "fields": {
+    "order": 62,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 50,
+  "fields": {
+    "order": 63,
+    "event": 3,
+    "ticket_type": 5,
+    "qty": 2,
+    "unit_price": "600.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 51,
+  "fields": {
+    "order": 64,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 52,
+  "fields": {
+    "order": 45,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 53,
+  "fields": {
+    "order": 65,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 54,
+  "fields": {
+    "order": 66,
+    "event": 9,
+    "ticket_type": 9,
+    "qty": 1,
+    "unit_price": "150.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 55,
+  "fields": {
+    "order": 67,
+    "event": 3,
+    "ticket_type": 6,
+    "qty": 1,
+    "unit_price": "600.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 56,
+  "fields": {
+    "order": 68,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 57,
+  "fields": {
+    "order": 70,
+    "event": 9,
+    "ticket_type": 9,
+    "qty": 1,
+    "unit_price": "150.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 58,
+  "fields": {
+    "order": 74,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 59,
+  "fields": {
+    "order": 75,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 60,
+  "fields": {
+    "order": 76,
+    "event": 9,
+    "ticket_type": 9,
+    "qty": 1,
+    "unit_price": "150.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 61,
+  "fields": {
+    "order": 90,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 64,
+  "fields": {
+    "order": 91,
+    "event": 3,
+    "ticket_type": 5,
+    "qty": 1,
+    "unit_price": "600.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 65,
+  "fields": {
+    "order": 91,
+    "event": 3,
+    "ticket_type": 7,
+    "qty": 1,
+    "unit_price": "1000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 66,
+  "fields": {
+    "order": 91,
+    "event": 5,
+    "ticket_type": 2,
+    "qty": 1,
+    "unit_price": "150.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 67,
+  "fields": {
+    "order": 92,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 4,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 68,
+  "fields": {
+    "order": 92,
+    "event": 9,
+    "ticket_type": 9,
+    "qty": 1,
+    "unit_price": "150.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 69,
+  "fields": {
+    "order": 93,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 1,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 70,
+  "fields": {
+    "order": 94,
+    "event": 9,
+    "ticket_type": 9,
+    "qty": 10,
+    "unit_price": "150.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 71,
+  "fields": {
+    "order": 95,
+    "event": 5,
+    "ticket_type": 2,
+    "qty": 1,
+    "unit_price": "150.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 72,
+  "fields": {
+    "order": 96,
+    "event": 2,
+    "ticket_type": 4,
+    "qty": 1,
+    "unit_price": "700.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 73,
+  "fields": {
+    "order": 73,
+    "event": 4,
+    "ticket_type": 16,
+    "qty": 1,
+    "unit_price": "600.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 74,
+  "fields": {
+    "order": 97,
+    "event": 6,
+    "ticket_type": 10,
+    "qty": 3,
+    "unit_price": "100.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 75,
+  "fields": {
+    "order": 98,
+    "event": 6,
+    "ticket_type": 10,
+    "qty": 15,
+    "unit_price": "100.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 76,
+  "fields": {
+    "order": 100,
+    "event": 3,
+    "ticket_type": 7,
+    "qty": 2,
+    "unit_price": "1000.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 77,
+  "fields": {
+    "order": 101,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 78,
+  "fields": {
+    "order": 102,
+    "event": 9,
+    "ticket_type": 9,
+    "qty": 9,
+    "unit_price": "150.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 79,
+  "fields": {
+    "order": 103,
+    "event": 6,
+    "ticket_type": 10,
+    "qty": 3,
+    "unit_price": "100.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 80,
+  "fields": {
+    "order": 104,
+    "event": 11,
+    "ticket_type": 17,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 81,
+  "fields": {
+    "order": 105,
+    "event": 1,
+    "ticket_type": 1,
+    "qty": 5,
+    "unit_price": "500.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 82,
+  "fields": {
+    "order": 106,
+    "event": 9,
+    "ticket_type": 9,
+    "qty": 100,
+    "unit_price": "150.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 83,
+  "fields": {
+    "order": 108,
+    "event": 10,
+    "ticket_type": 8,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 85,
+  "fields": {
+    "order": 109,
+    "event": 4,
+    "ticket_type": 16,
+    "qty": 10,
+    "unit_price": "600.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 86,
+  "fields": {
+    "order": 109,
+    "event": 6,
+    "ticket_type": 10,
+    "qty": 1,
+    "unit_price": "100.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 87,
+  "fields": {
+    "order": 110,
+    "event": 11,
+    "ticket_type": 17,
+    "qty": 1,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 88,
+  "fields": {
+    "order": 111,
+    "event": 4,
+    "ticket_type": 16,
+    "qty": 2,
+    "unit_price": "600.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 89,
+  "fields": {
+    "order": 113,
+    "event": 11,
+    "ticket_type": 17,
+    "qty": 2,
+    "unit_price": "200.00"
+  }
+},
+{
+  "model": "tickets_addons.buyorder",
+  "pk": "164c7414-bd99-4a5c-8812-51f6bfc92656",
+  "fields": {
+    "event_title": "zdravko colic",
+    "email": "nikolovanena123@gmail.com",
+    "first_name": "nena",
+    "last_name": "nikolova",
+    "address": "engelsova5",
+    "created_at": "2025-09-16T01:02:08.797Z"
+  }
+}
+]
